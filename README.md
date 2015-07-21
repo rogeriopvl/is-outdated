@@ -8,12 +8,14 @@ This is a simple node module that tells you when the installed version of a node
 
 ## Usage
 
-    var isOutdated = require('is-outdated');
+```javascript
+var isOutdated = require('is-outdated');
 
-    isOutdated('mypackage', require('./package.json').version, function (err, res) {
-        console.log('The latest version of this app is %s', res.version);
-        console.log('Please updated it with: npm update -g mypackage');
-    });
+isOutdated('mypackage', require('./package.json').version, function (err, res) {
+    console.log('The latest version of this app is %s', res.version);
+    console.log('Please updated it with: npm update -g mypackage');
+});
+```
 
 ## API
 
