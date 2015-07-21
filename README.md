@@ -1,4 +1,4 @@
-# is-outdated
+# is-outdated [![Build Status](https://secure.travis-ci.org/rogeriopvl/is-outdated.png?branch=master)](https://travis-ci.org/rogeriopvl/is-outdated)
 
 This is a simple node module that tells you when the installed version of a node package (i.e app) is outdated.
 
