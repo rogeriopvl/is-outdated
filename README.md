@@ -16,11 +16,13 @@ This is a simple node module that tells you when the installed version of a node
 
 ## API
 
-isOutdated(name, version, callback)
+`isOutdated(name, version, callback)`
 
 * name (string) the name of the package
 * version (string) a semver compatible string
 * callback (function)
+    * err
+    * data - `false` when the package is not outdated or an object in the form: `{ version: 'x.x.x' }`
 
 ## License
 
