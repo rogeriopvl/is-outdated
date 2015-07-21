@@ -1,3 +1,4 @@
+var npm = require('npm');
 var semver = require('semver');
 
 /**
@@ -10,7 +11,6 @@ var semver = require('semver');
  *    being the version key the latest version available
  */
 module.exports = function (name, version, cb) {
-  var npm = require('npm');
   npm.load({}, function () {
     npm.commands.info([name, 'version'], true, function (err, data) {
       if (err) { return cb(err); }
@@ -19,9 +19,8 @@ module.exports = function (name, version, cb) {
 
       if (semver.lt(version, currentVersion)) {
         return cb(null, data[currentVersion]);
-      } else {
-        return cb(null, false);
       }
+      return cb(null, false);
     });
-  })
+  });
 };
