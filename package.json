@@ -1,0 +1,23 @@
+{
+  "name": "is-outdated",
+  "version": "1.0.0",
+  "description": "Notify your users to update your node app",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "keywords": [
+    "update",
+    "notifier",
+    "outdated"
+  ],
+  "author": "rogeriopvl",
+  "license": "MIT",
+  "devDependencies": {
+    "tape": "^4.0.1"
+  },
+  "dependencies": {
+    "npm": "^2.13.1",
+    "semver": "^5.0.1"
+  }
+}
