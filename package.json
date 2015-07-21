@@ -1,6 +1,6 @@
 {
   "name": "is-outdated",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Notify your users to update your node app",
   "main": "index.js",
   "scripts": {
