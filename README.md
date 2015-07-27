@@ -2,6 +2,8 @@
 
 This is a simple node module that tells you when the installed version of a node package (i.e app) is outdated.
 
+**Note:** if you need a more complete solution check out [update-notifier](https://www.npmjs.com/package/update-notifier).
+
 ## Install
 
     npm install --save is-outdated
