@@ -1,23 +1,16 @@
 var test = require('tape');
 var mockery = require('mockery');
 
-// Mock the npm module
-var npmMock = {
-  load: function (opts, cb) {
-    return cb();
-  },
-  commands: {
-    info: function (args, silent, cb) {
-      if (args[0] === 'fakepackage') {
-        return cb(new Error('Not found'));
-      }
-      return cb(null, { '2.0.0': { version: '2.0.0' }});
-    }
+// Mock the latest-version module
+var latestVersionMock = function (name, cb) {
+  if (name === 'fakepackage') {
+    return cb(new Error('Not found'));
   }
+  return cb(null, '2.0.0');
 };
 
 mockery.enable({ warnOnUnregistered: false });
-mockery.registerMock('npm', npmMock);
+mockery.registerMock('latest-version', latestVersionMock);
 
 var isOutdated = require('../');
 

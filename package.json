@@ -18,7 +18,7 @@
     "tape": "^4.0.1"
   },
   "dependencies": {
-    "npm": "^2.13.1",
+    "latest-version": "^1.0.1",
     "semver": "^5.0.1"
   },
   "repository": {
