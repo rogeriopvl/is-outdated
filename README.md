@@ -1,5 +1,7 @@
 # is-outdated [![Build Status](https://travis-ci.org/rogeriopvl/is-outdated.svg?branch=master)](https://travis-ci.org/rogeriopvl/is-outdated)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/rogeriopvl/is-outdated.svg)](https://greenkeeper.io/)
+
 This is a simple node module that tells you when the installed version of a node package (i.e app) is outdated.
 
 **Note:** if you need a more complete solution check out [update-notifier](https://www.npmjs.com/package/update-notifier).
