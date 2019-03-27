@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "latest-version": "^4.0.0",
-    "semver": "^5.5.1"
+    "semver": "^6.0.0"
   },
   "repository": {
     "type": "git",
